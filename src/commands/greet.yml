@@ -15,6 +15,6 @@ steps:
   #     command: <<include(scripts/greet.sh)>>
   - run:
       environment:
-        HELLO_WORLD: ${HELLO_WORLD}
+        HELLO_WORLD: $HELLO_WORLD
       name: Hello World
       command: <<include(scripts/greet.sh)>>
