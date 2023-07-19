@@ -19,3 +19,6 @@ steps:
   - run:
       name: Hello World
       command: echo $HELLO_WORLD && echo $HOWAYANOW && echo ${HOWAYANOW} && echo HOWAYANOW
+  - run:
+      name: Hello now
+      command: echo ${HOWAYANOW} && echo HOWAYANOW
