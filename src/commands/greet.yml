@@ -18,7 +18,7 @@ steps:
       command: <<include(scripts/greet.sh)>>
   - run:
       name: Hello World
-      command: echo $HELLO_WORLD && echo $HOWAYANOW 
+      command: echo $HELLO_WORLD && echo $HOWAYANOW
   - run:
       name: Hello now
       command: echo ${HOWAYANOW} && echo HOWAYANOW
