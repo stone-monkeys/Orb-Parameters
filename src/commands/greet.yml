@@ -8,13 +8,13 @@ parameters:
     default: "World"
     description: "Hello to whom?"
 steps:
+  # - run:
+  #     environment:
+  #       PARAM_TO: <<parameters.to>>
+  #     name: Hello Greeting
+  #     command: <<include(scripts/greet.sh)>>
   - run:
       environment:
-        PARAM_TO: <<parameters.to>>
-      name: Hello Greeting
-      command: <<include(scripts/greet.sh)>>
-  - run:
-      environment:
-        HELLO_WORLD: <<parameters.to>>
+        HELLO_WORLD: ${HELLO_WORLD:}
       name: Hello World
       command: <<include(scripts/greet.sh)>>
