@@ -7,4 +7,6 @@ HELLO=$(circleci env subst "${HELLO_WORLD}")
 # If for any reason the TO variable is not set, default to "World"
 # echo "Hello ${TO:-World}!"
 
-echo "Hello ${HELLO:-World}!"
+echo "Hello ${HELLO}!"
+
+
